@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 75px;
+  margin: 25px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5666;
+}
+
+.grid {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 25%;
+}
+
+.enterText {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.grid div {
+  flex: 0 0 150px;
+  height: 150px;
+  border: 3px solid black;
+}
+
+.cell {
+  font-family: "Hammersmith One", sans-serif;
+  text-align: center;
+  padding: 25px;
+  font-size: 100px;
+}
+
+.clear-board {
+  position: absolute;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  background: black;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: bold;
+  padding: 4px;
+  margin-top: 10px;
+  border: 2px solid white;
+  color: white;
+  top: 72%;
+  left: 44.6%;
+}
+
+form input {
+  padding: 5px;
+}
+.p1Name {
+  margin: 2px;
+}
+
+.p2Name {
+  margin: 2px;
+}
+.startGame {
+  padding: 5px;
+}
+
+.nameDisplay {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  font-size: 50px;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.backgroundColor {
+  display: flex;
+  justify-content: center;
+}
+.clear-board:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.grid div:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.grid div:nth-of-type(2) {
+  border-top-color: transparent;
+}
+
+.grid div:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.grid div:nth-of-type(4) {
+  border-left-color: transparent;
+}
+
+.grid div:nth-of-type(6) {
+  border-right-color: transparent;
+}
+
+.grid div:nth-of-type(7) {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.grid div:nth-of-type(8) {
+  border-bottom-color: transparent;
+}
+
+.grid div:nth-of-type(9) {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.grid div::nth-of-type(10) {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.invisible {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .clear-board {
+    left: 39%;
+  }
+  .nameDisplay {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+  }
+}

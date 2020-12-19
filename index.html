@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Hammersmith+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+    <title>TicTacToe</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <section class="grid">
+      <span class="playerTurn"></span>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </section>
+    <span>
+    <section class="controls">
+      <div class="nameDisplay"></div>
+      <form id="playerSubmission" class="p1Name">
+        <span class="enterText"> Enter Names Here! </span>
+        <input type="text" placeholder="Player X Name" id="playerOne" />
+        <input type="text" placeholder="Player O Name" id="playerTwo" />
+        <input type="submit" value="Start Game!" class="startGame" />
+      </form>
+      <button class="clear-board">Clear Board</button>
+    </section>
+  </body>
+</html>
